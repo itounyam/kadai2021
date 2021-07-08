@@ -66,36 +66,36 @@
         IdentityFile ~/.ssh/id_rsa
     ```
 1. ユーザー情報を確認し、設定します。
-    Git Bash にて
-    `git config --global -l`
-    を実行します。
-    `user.name`と`user.email`が設定されていなければ次のコマンドを実行します。（名前とメールアドレスは自分のものを入力してください）
-    ```
-    git config --global user.name "NIIKURA Shozo"
-    git config --global user.email "ss1561@hus.ac.jp"
-    ```
-    コマンド実行後に改めて
-    `git config --global -l`
-    を実行してください。
-    こちらでの実行結果は以下のようになります。
-    ```
-    shozo@SHOZO-SV7 MINGW64 ~
-    $ git config --global -l
+    - Git Bash にて
+        `git config --global -l`
+        を実行します。
+    - `user.name`と`user.email`が設定されていなければ次のコマンドを実行します。（名前とメールアドレスは自分のものを入力してください）
+        ```
+        git config --global user.name "NIIKURA Shozo"
+        git config --global user.email "ss1561@hus.ac.jp"
+        ```
+    - コマンド実行後に改めて
+        `git config --global -l`
+        を実行してください。
+    - こちらでの実行結果は以下のようになります。
+        ```
+        shozo@SHOZO-SV7 MINGW64 ~
+        $ git config --global -l
 
-    shozo@SHOZO-SV7 MINGW64 ~
-    $ git config --global user.name "NIIKURA Shozo"
+        shozo@SHOZO-SV7 MINGW64 ~
+        $ git config --global user.name "NIIKURA Shozo"
 
-    shozo@SHOZO-SV7 MINGW64 ~
-    $ git config --global user.email "ss1561@hus.ac.jp"
+        shozo@SHOZO-SV7 MINGW64 ~
+        $ git config --global user.email "ss1561@hus.ac.jp"
 
-    shozo@SHOZO-SV7 MINGW64 ~
-    $ git config --global -l
-    user.name=NIIKURA Shozo
-    user.email=ss1561@hus.ac.jp
+        shozo@SHOZO-SV7 MINGW64 ~
+        $ git config --global -l
+        user.name=NIIKURA Shozo
+        user.email=ss1561@hus.ac.jp
 
-    shozo@SHOZO-SV7 MINGW64 ~
-    $
-    ```
+        shozo@SHOZO-SV7 MINGW64 ~
+        $
+        ```
 
 ## githubのアカウント設定
 動画を参照してください。チェックポイントを以下に示します。

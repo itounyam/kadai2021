@@ -2,12 +2,53 @@
 
 ## 課題一覧
 
-1. 課題1 https://github.com/husniikura/kadai2021-1
-2. 課題2 https://github.com/husniikura/kadai2021-2
-3. 課題3 https://github.com/husniikura/kadai2021-3
-4. 課題4 https://github.com/husniikura/kadai2021-4
+1. 課題1  99 Bottles of Beer on the Wall
+    https://github.com/husniikura/kadai2021-1
+2. 課題2  Bubble Sort
+    https://github.com/husniikura/kadai2021-2
+3. 課題3  電卓アプリ
+    https://github.com/husniikura/kadai2021-3
+4. 課題4  アプリの自由製作
+    https://github.com/husniikura/kadai2021-4
+
+## マニュアル
+
+以下のマニュアルに従って、設定してください。
+[[設定マニュアル]]
 
 ## 提出方法
+次の手順で提出してください。
+1. 課題一覧の各種リポジトリをフォークしてください
+2. フォークしたリポジトリをクローンしてください
+3. 課題を解答し、コミット＆プッシュしてください
+4. Githubの画面からPRを作成してください
+
+### 提出例
+課題は `kadai2021-1` とします。
+ユーザー名は `xxxuser` とします。
+
+1. Chromeにて下記のアドレスを開きます。
+    https://github.com/husniikura/kadai2021-1
+    開いたら、右上の `Fork` ボタンをクリックします。
+    フォークが成功すると、URLが
+    https://github.com/xxxuser/kadai2021-1
+    に変わります。
+2. VS Code にてリポジトリのクローンを実行します。
+    - 新規のリポジトリを開く必要がありますので、上部のメニューから
+        File > New Window
+        を選択します。
+    - 左側のメニューから「ソース管理」を選択し、「リポジトリのクローン」を選択します。
+    - 上のダイアログから `github から複製` を選択します。
+    - ダイアログやブラウザで確認画面が表示されますので、一つずつ許可します。
+    - リポジトリ名の一覧の中から xxxuser/kadai2021-1.git を選択します。
+3. 課題を解答します。
+    - 解答方法は2通りがあり、どちらの方法でも構いません。
+    1. Chrome のディベロッパーツールのコンソールに貼り付けたら動作する JavaScript ファイル1つを作成する。
+    2. HTMLファイルとJavaScriptファイルを組み合わせて、HTMLファイルを開いたときに自動的にプログラムが動作するようにする。
+    - 解答したら、VS Codeのソース管理画面からコミットします。
+    - コミットできたら、VS Codeの左下のアイコンに数字が表示されます。
+    - てプッシュします。
 
 ## 採点方法
+PRを受け付けた時点から
 

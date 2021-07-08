@@ -54,9 +54,16 @@
     - `New pull request` をクリックします。
     - `←` の左側は `husniikura/kadai2021-1`, `base: main` のままにしてください。
     - `←` の右側は `xxxuser/kadai2021-1`, `compare: main` のままにしてください。
-    - `Create pull request` ボタンをクリックします
+    - `Create pull request` ボタンをクリックします。
+    - タイトルには `学籍番号` を入れます。
+    - 右下の `Create pull request` ボタンをクリックします。
 
-以上で提出が完了となります。    
+以上で提出が完了となります。
+PRの作成が完了すると、
+https://github.com/husniikura/kadai2021-1/pull/NN (`NN`: 連番)
+に移動します。 `husniikura` のリポジトリに移動していますのでご注意ください。
+`Pull request` をクリックしますと他の学生が作成したPRも閲覧可能です。
+こちらにつきましては見ていただいて構いません。
 
 ## 採点方法
 - Pull Request(PR) を受け付けた時点から、順次コメントを付けます。

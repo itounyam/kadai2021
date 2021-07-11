@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>数当てゲーム</title>
+</head>
+<body>
+  <h1>数当てゲーム</h1>
+  <p>
+      1から10までの数字を入力してください。
+  </p>
+  <p>
+      <label>
+          <span id="times">1</span>
+          回目
+      </label>
+      <input type="number" id="inputNumber" />
+  </p>
+  <button name="calcButton" onclick="doCalc();">送信</button>
+  <button name="clearButton" onclick="start();">初期化</button>
+  <p id="message"></p>
+  <p>
+      <label>実行結果</label>
+      <ul id="result">
+      </ul>
+  </p>
+  <script type="text/javascript">
+    function doCalc() {
+      let num = parseInt(document.getElementById("inputNumber").value);
+      if (! checkInputFormat(num)) {
+        return;
+      }
+      let times = parseInt(document.getElementById("times").innerText);
+      let resultList = document.getElementById("result");
+      let newItem = document.createElement('li');
+      newItem.innerText = times + "回目: " + num + " " + checkNum(num);
+      resultList.appendChild(newItem);
+      times++
+      document.getElementById("times").innerText = times;
+    }
+    
+    function checkInputFormat(num) {
+      if (isNaN(num)) {
+        document.getElementById("message").innerText = "数値を入力してください。";
+        return false;
+      } else if (num > MAX) {
+        document.getElementById("message").innerText = MAX + "以下の数値を入力してください。";
+        return false;
+      } else if (num <= 0) {
+        document.getElementById("message").innerText = "1以上の数値を入力してください。";
+        return false;
+      } else {
+        document.getElementById("message").text = "";
+        return true;
+      }
+    }
+    
+    function checkNum(num) {
+      if (num == answer) {
+        return "Clear!";
+      } else if (num < answer) {
+        return "Small";
+      } else {
+        return "Big";
+      }
+    }
+    
+    function start() {
+      answer = Math.floor(Math.random()*MAX) + 1;
+      document.getElementById("times").innerText = 1;
+      resultList = document.getElementById("result").innerHTML = '';
+      document.getElementById("inputNumber").value = null;
+    }
+
+    let answer;
+    const MAX = 10;
+    start();
+  </script>
+</body>
+</html>

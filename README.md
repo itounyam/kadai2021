@@ -3,16 +3,16 @@
 ## 課題一覧
 
 1. 課題1  99 Bottles of Beer on the Wall
-   - ()[kadai1] 
+   - [kadai1の説明](kadai1)
    - https://github.com/husniikura/kadai2021-1
 2. 課題2  Bubble Sort
-   - ()[kadai2] 
+   - [kadai2の説明](kadai2)
    - https://github.com/husniikura/kadai2021-2
 3. 課題3  電卓アプリ
-   - ()[kadai3] 
+   - [kadai3の説明](kadai3)
    - https://github.com/husniikura/kadai2021-3
 4. 課題4  アプリの自由製作
-   - ()[kadai4] 
+   - [kadai4の説明](kadai4)
    - https://github.com/husniikura/kadai2021-4
 
 ## マニュアル

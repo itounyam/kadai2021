@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>課題３ 電卓の解答</title>
+    <style>
+      #calc {
+        width: 15rem;
+      }
+      #buttons ul li button{
+        width: 2.2rem;
+        height: 2rem;
+        white-space: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      #buttons ul li {
+        float: left;
+        list-style-type: none;
+        margin-left: 1rem;
+      }
+      #buttons ul {
+        margin: 0.5rem;
+        padding: 0;
+      }
+      .clearfix::after {
+        content: " ";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>課題３ 電卓の解答</h1>
+    <div id="calc">
+      <div id="answer-area">
+        <input type="text" id="answer" readonly="readonly" style="text-align: right;">
+        <button id="button-clear">クリア</button>
+      </div>
+      <div id="buttons">
+        <ul class="clearfix">
+          <li><button name="number" id="button7" value="7">７</button></li>
+          <li><button name="number" id="button8" value="8">８</button></li>
+          <li><button name="number" id="button9" value="9">９</button></li>
+          <li><button name="operator" id="button-division" value="division">÷</button></li>
+        </ul>
+        <ul class="clearfix">
+          <li><button name="number" id="button4" value="4">４</button></li>
+          <li><button name="number" id="button5" value="5">５</button></li>
+          <li><button name="number" id="button6" value="6">６</button></li>
+          <li><button name="operator" id="button-multiplication" value="multiplication">×</button></li>
+        </ul>
+        <ul class="clearfix">
+          <li><button name="number" id="button1" value="1">１</button></li>
+          <li><button name="number" id="button2" value="2">２</button></li>
+          <li><button name="number" id="button3" value="3">３</button></li>
+          <li><button name="operator" id="button-subtraction" value="subtraction">－</button></li>
+        </ul>
+        <ul class="clearfix">
+          <li><button name="number" id="button0" value="0">０</button></li>
+          <li><button name="number" id="button-negative" value="negative">+/-</button></li>
+          <li><button name="operator" id="button-equal" value="equal">＝</button></li>
+          <li><button name="operator" id="button-addition" value="addition">＋</button></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./calc.js"></script>
+</html>

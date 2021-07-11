@@ -30,6 +30,26 @@
 - 初期値`99`を定数として定義している
 - 初期値が`99`以外の値でも動作する(関数あるいは定数を利用する)
 
+## ヒント
+ループと条件分岐が必須です。
+その上で、文字列の連結を行えることが重要となります。
+```js
+//例 k>1 の場合
+let k = 99;
+let plural = (k === 1 ? '' : 's');
+let line = k + " bottle" + plural + " of beer on the wall, ";
+line;  // => "99 bottles of beer on the wall, "
+```
+
+```js
+//例 k=1 の場合
+let k = 1;
+let plural = (k === 1 ? '' : 's');
+let line = k + " bottle" + plural + " of beer on the wall, ";
+line;  // => "1 bottle of beer on the wall, "
+```
+k=0 の場合はさらに条件分岐が必要です。
+
 ## 出力結果
 求める出力結果は以下のようになります。
 ```

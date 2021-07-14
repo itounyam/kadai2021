@@ -2,7 +2,7 @@ const kadais = [];
 
 document.getElementById('kadai-number').addEventListener('change', function(event) {
     document.getElementById('expected-answer').value = kadais[event.target.value];
-  });
+});
 
 kadais.push(`99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.

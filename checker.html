@@ -11,19 +11,17 @@
             <div class="card mb-4 shadow-sm">
             <div class="card-header">
               <td>
-                <form action="./checker.html" method="post" id="form">
-                  <select class="form-select" id="kadai-number" required>
-                    <option value=0>kadai 1</option>
-                    <option value=1></option>kadai 2</option>
-                  </select>
-                </form>
-              </td>
+                <select class="form-select" id="kadai-number" required>
+                  <option value=0>kadai 1</option>
+                  <option value=1>kadai 2</option>
+                </select>
+            </td>
               <td>
                 <button type="button" class="w-100 btn btn-lg btn-outline-primary">クリア</button>
               <td>
             </div>
             <div class="card-body">
-              <textarea id="outputAnswer" cols="50" rows="10">
+              <textarea id="expected-answer" cols="50" rows="10">
               </textarea>  
             </div>
           </div>
@@ -33,7 +31,7 @@
               <h4 class="my-0 fw-normal">YourAnswer</h4>
             </div>
             <div class="card-body">
-              <textarea id="inputAnswer" cols="50" rows="10">
+              <textarea id="your-answer" cols="50" rows="10">
               </textarea>  
             </div>
           </div>

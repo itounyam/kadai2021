@@ -7,9 +7,9 @@ document.getElementById('kadai-number').addEventListener('change', function(even
 
 function getKadai(){
     switch (document.getElementById('kadai-number').value){
-        case '1':
+        case 0:
             return kadais[0]
-        case '2':
+        case 1:
             return kadais[1]
     }
 }

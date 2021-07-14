@@ -5,8 +5,39 @@
   <body>
     <h1>答え合わせ</h1>
     <div class="answers">
-      
-    </div>
+      <main class="container">
+        <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <td>
+                <select class="form-select" id="kadai" required>
+                <option value="">kadai 1</option>
+                <option>kadai 2</option>
+                </select>
+              </td>
+              <td>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">クリア</button>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">差分</button>
+              <td>
+            </div>
+            <div class="card-body">
+              <textarea name="outputAnser" cols="50" rows="10">
+              </textarea>  
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">YourAnswer</h4>
+            </div>
+            <div class="card-body">
+              <textarea name="inputAnser" cols="50" rows="10">
+              </textarea>  
+            </div>
+          </div>
+        </div>
+      </main>    </div>
     <script src="./checker.js"></script>
   </body>
 </html>

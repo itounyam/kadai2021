@@ -1,21 +1,22 @@
-const kadai1 = [];
-const kadai2 = [];
+const kadais = [];
 
 setKadais()
-
-document.getElementById('outputAnser').value = getKadai();
+document.getElementById('outputAnswer').value = getKadai();
+document.getElementById('kadai-number').addEventListener('change', function(event) {
+    document.getElementById('expected-answer').value = kadais[event.target.value];
+  });
 
 function getKadai(){
     switch (document.getElementById("kadais").value){
         case 'kadai-1':
-            return kadai1
+            return kadais[0]
         case 'kadai-2':
-            return kadai2
-        }
+            return kadais[1]
+    }
 }
 
 function setKadais() {
-    kadai1.push(`99 bottles of beer on the wall, 99 bottles of beer.
+    kadais.push(`    99 bottles of beer on the wall, 99 bottles of beer.
     Take one down and pass it around, 98 bottles of beer on the wall.
     
     98 bottles of beer on the wall, 98 bottles of beer.
@@ -316,14 +317,15 @@ function setKadais() {
     Go to the store and buy some more, 99 bottles of beer on the wall.
     `);
 
-    kadai2.push(`35 67 86 98 109 137 139 145 145 147
-        157 158 181 184 192 193 212 216 232 244
-        254 308 309 336 337 341 356 358 362 366
-        383 403 403 430 432 448 453 456 464 472
-        481 484 486 490 518 524 527 529 538 542
-        547 554 564 576 585 609 615 621 624 637
-        638 643 648 650 653 674 676 686 687 695
-        721 722 731 735 749 764 781 796 797 813
-        814 821 822 829 847 852 874 910 913 914
-        915 923 946 949 950 959 972 973 987 997`);
+    kadais.push(`    35 67 86 98 109 137 139 145 145 147
+    157 158 181 184 192 193 212 216 232 244
+    254 308 309 336 337 341 356 358 362 366
+    383 403 403 430 432 448 453 456 464 472
+    481 484 486 490 518 524 527 529 538 542
+    547 554 564 576 585 609 615 621 624 637
+    638 643 648 650 653 674 676 686 687 695
+    721 722 731 735 749 764 781 796 797 813
+    814 821 822 829 847 852 874 910 913 914
+    915 923 946 949 950 959 972 973 987 997
+    `);
 }

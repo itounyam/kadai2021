@@ -1,18 +1,8 @@
 const kadais = [];
 
-document.getElementById('outputAnswer').value = getKadai();
 document.getElementById('kadai-number').addEventListener('change', function(event) {
     document.getElementById('expected-answer').value = kadais[event.target.value];
   });
-
-function getKadai(){
-    switch (document.getElementById('kadai-number').value){
-        case 0:
-            return kadais[0]
-        case 1:
-            return kadais[1]
-    }
-}
 
 kadais.push(`99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.

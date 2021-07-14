@@ -4,6 +4,13 @@ document.getElementById('kadai-number').addEventListener('change', function(even
     document.getElementById('expected-answer').value = kadais[event.target.value];
 });
 
+function expectedAnswerClear(){
+    document.getElementById('expected-answer').value = null
+}
+function yourAnswerClear(){
+    document.getElementById('your-answer').value = null
+}
+kadais.push('')
 kadais.push(`99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 

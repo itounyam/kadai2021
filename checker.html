@@ -13,23 +13,28 @@
               <td>
                 <select class="form-select" id="kadai-number" required>
                   <option value=0></option>
-                  <option value=0>kadai 1</option>
-                  <option value=1>kadai 2</option>
+                  <option value=1>kadai 1</option>
+                  <option value=2>kadai 2</option>
                 </select>
-            </td>
+              </td>
               <td>
-                <button type="button" class="w-100 btn btn-lg btn-outline-primary">クリア</button>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="expectedAnswerClear()">クリア</button>
               <td>
             </div>
             <div class="card-body">
               <textarea id="expected-answer" cols="50" rows="10">
               </textarea>  
             </div>
-          </div>
+          </div><br>
           <div class="col">
             <div class="card mb-4 shadow-sm">
             <div class="card-header">
-              <h4 class="my-0 fw-normal">YourAnswer</h4>
+              <td>
+                <label class="my-0 fw-normal">YourAnswer</h4>
+              </td>
+              <td>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="yourAnswerClear()">クリア</button>
+              </td>
             </div>
             <div class="card-body">
               <textarea id="your-answer" cols="50" rows="10">

@@ -10,7 +10,10 @@ function expectedAnswerClear(){
 function yourAnswerClear(){
     document.getElementById('your-answer').value = null
 }
-kadais.push('')
+
+console.log = function(args){
+    args.forEach(document.getElementById('your-answer').value in args)
+}
 kadais.push(`99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
